@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Služby - Úklidová služba Lucie Hrdličková</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .services-detail {
+            padding: 120px 0 60px;
+        }
+        .service-category {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        .service-category h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        .service-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .service-item:last-child {
+            border-bottom: none;
+        }
+        .service-name {
+            flex: 1;
+        }
+        .service-price {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        .service-note {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Logo" style="height: 60px;"></a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Domů</a></li>
+                    <li><a href="sluzby.html" class="active">Naše služby</a></li>
+                    <li><a href="index.html#reference">Reference</a></li>
+                    <li><a href="index.html#galerie">Ukázky práce</a></li>
+                    <li><a href="index.html#cenik">Ceník</a></li>
+                    <li><a href="index.html#o-nas">O nás</a></li>
+                    <li><a href="index.html#kontakt">Kontakt</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="services-detail">
+        <div class="container">
+            <h1 class="section-title">Ceník služeb</h1>
+            <p class="service-note text-center">Uvedené ceny jsou platné od 15.02.23 za běžné znečištění (nejsme plátci DPH)</p>
+
+            <div class="service-category">
+                <h2>Tepování</h2>
+                <div class="service-item">
+                    <div class="service-name">Tepování koberce</div>
+                    <div class="service-price">16-23 Kč/m²</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-name">Tepování pohovka (1 sedací místo)</div>
+                    <div class="service-price">250 Kč/ks</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-name">Tepování matrace</div>
+                    <div class="service-price">60-90 Kč/m²</div>
+                </div>
+            </div>
+
+            <div class="service-category">
+                <h2>Parní čištění</h2>
+                <div class="service-item">
+                    <div class="service-name">Čištění podlahy a obkladů</div>
+                    <div class="service-price">55 Kč/m²</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-name">Celá koupelna, dle velikosti a míry znečištění</div>
+                    <div class="service-price">od 500 Kč</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-name">Radiátor</div>
+                    <div class="service-price">70 Kč/ks</div>
+                </div>
+            </div>
+
+            <div class="service-category">
+                <h2>Úklid domácnosti</h2>
+                <div class="service-item">
+                    <div class="service-name">Generální úklid (po malování, po rekonstrukci)</div>
+                    <div class="service-price">320 Kč</div>
+                </div>
+            </div>
+
+            <div class="service-category">
+                <h2>Okna, dveře</h2>
+                <div class="service-item">
+                    <div class="service-name">Okna včetně rámu</div>
+                    <div class="service-price">30 Kč/m²</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-name">Dveře</div>
+                    <div class="service-price">45-70 Kč/m²</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-name">Žaluzie</div>
+                    <div class="service-price">65 Kč/m²</div>
+                </div>
+            </div>
+
+            <div class="service-category">
+                <h2>Čištění automobilů</h2>
+                <p class="service-note">Tepování sedaček, koberců, čištění prahů, zádveří, čištění palubní desky + oživení plastů</p>
+                <div class="service-item">
+                    <div class="service-name">Malý osobní vůz (např. Škoda Fabia)</div>
+                    <div class="service-price">1500-1800 Kč</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-name">Střední vůz (např. Škoda Octavia)</div>
+                    <div class="service-price">1700-2100 Kč</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-name">Velký vůz (SUV, MPV)</div>
+                    <div class="service-price">2000-2600 Kč</div>
+                </div>
+            </div>
+
+            <div class="service-category">
+                <h2>Ostatní</h2>
+                <div class="service-item">
+                    <div class="service-name">TAHAČE A NÁKLADNÍ VOZY</div>
+                    <div class="service-price">Dle dohody</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-name">Doprava (Rakovník, Lány, Stochov, Kladno, Slaný)</div>
+                    <div class="service-price">10 Kč/km</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#"><img src="logo.png" alt="Logo" style="height: 60px;"></a>
+                </div>
+                <div class="footer-links">
+                    <h3>Rychlé odkazy</h3>
+                    <ul>
+                        <li><a href="index.html">Domů</a></li>
+                        <li><a href="sluzby.html">Naše služby</a></li>
+                        <li><a href="index.html#reference">Reference</a></li>
+                        <li><a href="index.html#galerie">Ukázky práce</a></li>
+                        <li><a href="index.html#cenik">Ceník</a></li>
+                        <li><a href="index.html#o-nas">O nás</a></li>
+                        <li><a href="index.html#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Kontakt</h3>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+420777888999">+420 777 888 999</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@uklidovkahrdlickova.com">info@uklidovkahrdlickova.com</a></p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Úklidová služba Lucie Hrdličková. Všechna práva vyhrazena. | 
+                <span>Vyvinuto s ❤️ od <a href="https://linharteum.cz" target="_blank">Kryštof Linharta</a></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" aria-label="Zpět nahoru">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
